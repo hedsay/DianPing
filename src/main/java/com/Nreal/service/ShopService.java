@@ -1,5 +1,6 @@
 package com.Nreal.service;
 
+import com.Nreal.dto.Result;
 import com.Nreal.entity.Shop;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -12,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ShopService extends IService<Shop> {
 
+    Result queryShopById(Long id);
 }
